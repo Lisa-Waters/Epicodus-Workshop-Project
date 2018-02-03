@@ -2,34 +2,72 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
      <script src="js/scripts.js"></script>
     <title>Epicodus Workshop Projizzle</title>
   </head>
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
       <h1>My Programming Goals</h1>
       <p>Every journizzle is easier if you <strong>know where you're going.</strong> <em>-unknown</em></p>
-      <img id="picture" src="img/murphy.jpg"/>
-      <h3>My Goalizzles</h3>
-      <p>
-        I Want to become a unicorn; full of goodness and light. Perhaps a little shenannigans-focused, but that's okay as well.
-      </p>
-      <div class="form-group">
-        <label>New Goal</label>
-        <input type="text" id="new-goal">
-        <button class="btn" type="button" id="goal-button">Add goal</button>
+      <div class="row">
+        <div class="col">
+          <img id="picture" src="img/murphy.jpg"/>
+        </div>
+        <div class="col">
+          <h3>My Goalizzles</h3>
+          <p>
+            I Want to become a unicorn; full of goodness and light. Perhaps a little shenannigans-focused, but that's okay as well.
+          </p>
+          <div class="form-group">
+            <label>New Goal</label>
+            <input type="text" id="new-goal">
+            <button class="btn" type="button" id="goal-button">Add goal</button>
+          </div>
+          <ul id="goal-list">
+            <li class="list-group-item">Learn Cinema</li>
+            <li class="list-group-item" id="css-item">Learn Lynch</li>
+            <li class="list-group-item" id="random-thing">Learn boohoo</li>
+            <li class="list-group-item">Learn hoodoo</li>
+          </ul>
+        </div>
       </div>
-      <ul id="goal-list">
-        <li class="list-item">Learn Cinema</li>
-        <li class="list-item" id="css-item">Learn Lynch</li>
-        <li class="list-item" id="random-thing">Learn boohoo</li>
-        <li class="list-item">Learn hoodoo</li>
-      </ul>
       <h3>My Favorite website</h3>
       <h4><a href="http://www.google.com">Google</a></h4>
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/crispin.jpg" alt="Lisa's new drink">
+        <div class="card-body">
+          <h5 class="card-title">Crispin</h5>
+          <p class="card-text">Let's get some!</p>
+          <a href="http://www.crispin.com" class="btn btn-success">Go somewhere</a>
+      </div>
+    </div>
     </div>
   </body>
 </html>

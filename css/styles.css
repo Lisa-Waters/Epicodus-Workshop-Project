@@ -2,6 +2,8 @@ h1 {
   color: #5179ba;
 }
 
+
+
 body {
   background-color: lightpink;
 }
@@ -15,14 +17,11 @@ body {
 }
 
 #goal-list {
-  border-style: solid;
-  border-color: honeydew;
-  width: 10%;
+  /*width: 25%;*/
 }
 
 #picture {
-  width: 60%;
-  float: right;
+  width: 300px;
   border: solid;
   border-color: black white black white;
     border-width: thick;
